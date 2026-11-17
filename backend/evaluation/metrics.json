@@ -1,0 +1,778 @@
+{
+  "dataset": {
+    "num_test_fields": 150,
+    "num_classes": 5,
+    "crops": [
+      "Wheat",
+      "Rice",
+      "Maize",
+      "Mustard",
+      "Cotton"
+    ],
+    "disclaimer": "Metrics calculated on held-out synthetic Sentinel-2 observations."
+  },
+  "random_forest": {
+    "20%": {
+      "accuracy": 0.5533,
+      "macro_f1": 0.5565,
+      "brier_score": 0.5451,
+      "expected_calibration_error": 0.0627,
+      "taxonomic_accuracy": {
+        "level_1_clade": 0.74,
+        "level_2_family": 0.6866666666666666,
+        "level_3_tribe": 0.5533333333333333,
+        "level_4_species": 0.5533333333333333
+      },
+      "per_class": {
+        "Wheat": {
+          "precision": 0.3571,
+          "recall": 0.5,
+          "f1": 0.4167
+        },
+        "Rice": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Maize": {
+          "precision": 0.3871,
+          "recall": 0.4,
+          "f1": 0.3934
+        },
+        "Mustard": {
+          "precision": 0.6316,
+          "recall": 0.4,
+          "f1": 0.4898
+        },
+        "Cotton": {
+          "precision": 0.5,
+          "recall": 0.4667,
+          "f1": 0.4828
+        }
+      },
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          8,
+          1,
+          6
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          12,
+          4,
+          2
+        ],
+        [
+          4,
+          0,
+          8,
+          12,
+          6
+        ],
+        [
+          11,
+          0,
+          3,
+          2,
+          14
+        ]
+      ]
+    },
+    "40%": {
+      "accuracy": 0.9067,
+      "macro_f1": 0.9077,
+      "brier_score": 0.1824,
+      "expected_calibration_error": 0.1385,
+      "taxonomic_accuracy": {
+        "level_1_clade": 0.94,
+        "level_2_family": 0.9266666666666666,
+        "level_3_tribe": 0.9066666666666666,
+        "level_4_species": 0.9066666666666666
+      },
+      "per_class": {
+        "Wheat": {
+          "precision": 0.8519,
+          "recall": 0.7667,
+          "f1": 0.807
+        },
+        "Rice": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Maize": {
+          "precision": 0.9643,
+          "recall": 0.9,
+          "f1": 0.931
+        },
+        "Mustard": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1": 0.9474
+        },
+        "Cotton": {
+          "precision": 0.7632,
+          "recall": 0.9667,
+          "f1": 0.8529
+        }
+      },
+      "confusion_matrix": [
+        [
+          23,
+          0,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          27,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          27,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          29
+        ]
+      ]
+    },
+    "60%": {
+      "accuracy": 0.9333,
+      "macro_f1": 0.9332,
+      "brier_score": 0.1162,
+      "expected_calibration_error": 0.0928,
+      "taxonomic_accuracy": {
+        "level_1_clade": 0.98,
+        "level_2_family": 0.9666666666666667,
+        "level_3_tribe": 0.9333333333333333,
+        "level_4_species": 0.9333333333333333
+      },
+      "per_class": {
+        "Wheat": {
+          "precision": 0.8929,
+          "recall": 0.8333,
+          "f1": 0.8621
+        },
+        "Rice": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Maize": {
+          "precision": 0.931,
+          "recall": 0.9,
+          "f1": 0.9153
+        },
+        "Mustard": {
+          "precision": 1.0,
+          "recall": 0.9333,
+          "f1": 0.9655
+        },
+        "Cotton": {
+          "precision": 0.8571,
+          "recall": 1.0,
+          "f1": 0.9231
+        }
+      },
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          2,
+          0,
+          3
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          27,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          28,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          30
+        ]
+      ]
+    },
+    "80%": {
+      "accuracy": 0.9267,
+      "macro_f1": 0.9277,
+      "brier_score": 0.1199,
+      "expected_calibration_error": 0.0933,
+      "taxonomic_accuracy": {
+        "level_1_clade": 0.94,
+        "level_2_family": 0.9266666666666666,
+        "level_3_tribe": 0.9266666666666666,
+        "level_4_species": 0.9266666666666666
+      },
+      "per_class": {
+        "Wheat": {
+          "precision": 0.8889,
+          "recall": 0.8,
+          "f1": 0.8421
+        },
+        "Rice": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Maize": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Mustard": {
+          "precision": 1.0,
+          "recall": 0.9333,
+          "f1": 0.9655
+        },
+        "Cotton": {
+          "precision": 0.7714,
+          "recall": 0.9,
+          "f1": 0.8308
+        }
+      },
+      "confusion_matrix": [
+        [
+          24,
+          0,
+          0,
+          0,
+          6
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          28,
+          2
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          27
+        ]
+      ]
+    },
+    "100%": {
+      "accuracy": 0.9667,
+      "macro_f1": 0.9666,
+      "brier_score": 0.0681,
+      "expected_calibration_error": 0.1018,
+      "taxonomic_accuracy": {
+        "level_1_clade": 0.9733333333333334,
+        "level_2_family": 0.9733333333333334,
+        "level_3_tribe": 0.9666666666666667,
+        "level_4_species": 0.9666666666666667
+      },
+      "per_class": {
+        "Wheat": {
+          "precision": 0.9091,
+          "recall": 1.0,
+          "f1": 0.9524
+        },
+        "Rice": {
+          "precision": 0.9677,
+          "recall": 1.0,
+          "f1": 0.9836
+        },
+        "Maize": {
+          "precision": 0.9667,
+          "recall": 0.9667,
+          "f1": 0.9667
+        },
+        "Mustard": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1": 0.9474
+        },
+        "Cotton": {
+          "precision": 1.0,
+          "recall": 0.9667,
+          "f1": 0.9831
+        }
+      },
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          29,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          27,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          29
+        ]
+      ]
+    }
+  },
+  "lstm": {
+    "20%": {
+      "accuracy": 0.54,
+      "macro_f1": 0.5308,
+      "brier_score": 0.5358,
+      "expected_calibration_error": 0.0866,
+      "taxonomic_accuracy": {
+        "level_1_clade": 0.7266666666666667,
+        "level_2_family": 0.6466666666666666,
+        "level_3_tribe": 0.54,
+        "level_4_species": 0.54
+      },
+      "per_class": {
+        "Wheat": {
+          "precision": 0.3659,
+          "recall": 0.5,
+          "f1": 0.4225
+        },
+        "Rice": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Maize": {
+          "precision": 0.4688,
+          "recall": 0.5,
+          "f1": 0.4839
+        },
+        "Mustard": {
+          "precision": 0.4412,
+          "recall": 0.5,
+          "f1": 0.4688
+        },
+        "Cotton": {
+          "precision": 0.4615,
+          "recall": 0.2,
+          "f1": 0.2791
+        }
+      },
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          7,
+          5,
+          3
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          9,
+          0,
+          15,
+          4,
+          2
+        ],
+        [
+          4,
+          0,
+          9,
+          15,
+          2
+        ],
+        [
+          13,
+          0,
+          1,
+          10,
+          6
+        ]
+      ]
+    },
+    "40%": {
+      "accuracy": 0.9467,
+      "macro_f1": 0.9471,
+      "brier_score": 0.0741,
+      "expected_calibration_error": 0.0503,
+      "taxonomic_accuracy": {
+        "level_1_clade": 0.96,
+        "level_2_family": 0.9533333333333334,
+        "level_3_tribe": 0.9466666666666667,
+        "level_4_species": 0.9466666666666667
+      },
+      "per_class": {
+        "Wheat": {
+          "precision": 0.9259,
+          "recall": 0.8333,
+          "f1": 0.8772
+        },
+        "Rice": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Maize": {
+          "precision": 1.0,
+          "recall": 0.9667,
+          "f1": 0.9831
+        },
+        "Mustard": {
+          "precision": 1.0,
+          "recall": 0.9667,
+          "f1": 0.9831
+        },
+        "Cotton": {
+          "precision": 0.8286,
+          "recall": 0.9667,
+          "f1": 0.8923
+        }
+      },
+      "confusion_matrix": [
+        [
+          25,
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          29,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          29,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          29
+        ]
+      ]
+    },
+    "60%": {
+      "accuracy": 0.98,
+      "macro_f1": 0.98,
+      "brier_score": 0.0271,
+      "expected_calibration_error": 0.0107,
+      "taxonomic_accuracy": {
+        "level_1_clade": 0.9866666666666667,
+        "level_2_family": 0.98,
+        "level_3_tribe": 0.98,
+        "level_4_species": 0.98
+      },
+      "per_class": {
+        "Wheat": {
+          "precision": 1.0,
+          "recall": 0.9333,
+          "f1": 0.9655
+        },
+        "Rice": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Maize": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Mustard": {
+          "precision": 0.9677,
+          "recall": 1.0,
+          "f1": 0.9836
+        },
+        "Cotton": {
+          "precision": 0.9355,
+          "recall": 0.9667,
+          "f1": 0.9508
+        }
+      },
+      "confusion_matrix": [
+        [
+          28,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          29
+        ]
+      ]
+    },
+    "80%": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "brier_score": 0.0,
+      "expected_calibration_error": 0.001,
+      "taxonomic_accuracy": {
+        "level_1_clade": 1.0,
+        "level_2_family": 1.0,
+        "level_3_tribe": 1.0,
+        "level_4_species": 1.0
+      },
+      "per_class": {
+        "Wheat": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Rice": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Maize": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Mustard": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Cotton": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          30
+        ]
+      ]
+    },
+    "100%": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "brier_score": 0.0007,
+      "expected_calibration_error": 0.0027,
+      "taxonomic_accuracy": {
+        "level_1_clade": 1.0,
+        "level_2_family": 1.0,
+        "level_3_tribe": 1.0,
+        "level_4_species": 1.0
+      },
+      "per_class": {
+        "Wheat": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Rice": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Maize": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Mustard": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Cotton": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          30
+        ]
+      ]
+    }
+  }
+}

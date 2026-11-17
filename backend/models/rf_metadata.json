@@ -1,0 +1,114 @@
+{
+  "model_type": "RandomForestClassifier",
+  "n_estimators": 150,
+  "max_depth": 14,
+  "num_classes": 5,
+  "crops": [
+    "Wheat",
+    "Rice",
+    "Maize",
+    "Mustard",
+    "Cotton"
+  ],
+  "features": [
+    "B2_Blue",
+    "B3_Green",
+    "B4_Red",
+    "B8_NIR",
+    "B11_SWIR1",
+    "B12_SWIR2",
+    "NDVI",
+    "NDWI",
+    "EVI"
+  ],
+  "num_train_fields": 700,
+  "num_val_fields": 150,
+  "num_test_fields": 150,
+  "full_season_test_accuracy": 0.9667,
+  "full_season_test_macro_f1": 0.9666,
+  "progressive_val_evidence": {
+    "20%": {
+      "level_1": 0.7,
+      "level_2": 0.6467,
+      "level_3": 0.5467,
+      "level_4": 0.5467
+    },
+    "40%": {
+      "level_1": 0.9067,
+      "level_2": 0.9,
+      "level_3": 0.88,
+      "level_4": 0.88
+    },
+    "60%": {
+      "level_1": 0.98,
+      "level_2": 0.98,
+      "level_3": 0.96,
+      "level_4": 0.96
+    },
+    "80%": {
+      "level_1": 0.9,
+      "level_2": 0.9,
+      "level_3": 0.9,
+      "level_4": 0.9
+    },
+    "100%": {
+      "level_1": 1.0,
+      "level_2": 0.9933,
+      "level_3": 0.9933,
+      "level_4": 0.9933
+    }
+  },
+  "progressive_test_metrics": {
+    "20%": {
+      "accuracy": 0.5533,
+      "macro_f1": 0.5565,
+      "taxonomy_accuracy": {
+        "level_1": 0.7,
+        "level_2": 0.6467,
+        "level_3": 0.5467,
+        "level_4": 0.5467
+      }
+    },
+    "40%": {
+      "accuracy": 0.9067,
+      "macro_f1": 0.9077,
+      "taxonomy_accuracy": {
+        "level_1": 0.9067,
+        "level_2": 0.9,
+        "level_3": 0.88,
+        "level_4": 0.88
+      }
+    },
+    "60%": {
+      "accuracy": 0.9333,
+      "macro_f1": 0.9332,
+      "taxonomy_accuracy": {
+        "level_1": 0.98,
+        "level_2": 0.98,
+        "level_3": 0.96,
+        "level_4": 0.96
+      }
+    },
+    "80%": {
+      "accuracy": 0.9267,
+      "macro_f1": 0.9277,
+      "taxonomy_accuracy": {
+        "level_1": 0.9,
+        "level_2": 0.9,
+        "level_3": 0.9,
+        "level_4": 0.9
+      }
+    },
+    "100%": {
+      "accuracy": 0.9667,
+      "macro_f1": 0.9666,
+      "taxonomy_accuracy": {
+        "level_1": 1.0,
+        "level_2": 0.9933,
+        "level_3": 0.9933,
+        "level_4": 0.9933
+      }
+    }
+  },
+  "is_synthetic": true
+}

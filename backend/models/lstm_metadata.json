@@ -1,0 +1,102 @@
+{
+  "model_type": "CropLSTM",
+  "input_size": 9,
+  "hidden_size": 64,
+  "num_layers": 2,
+  "num_classes": 5,
+  "crops": [
+    "Wheat",
+    "Rice",
+    "Maize",
+    "Mustard",
+    "Cotton"
+  ],
+  "best_val_loss": 0.0011,
+  "full_season_test_accuracy": 1.0,
+  "full_season_test_macro_f1": 1.0,
+  "progressive_val_evidence": {
+    "20%": {
+      "level_1": 0.7,
+      "level_2": 0.6267,
+      "level_3": 0.52,
+      "level_4": 0.52
+    },
+    "40%": {
+      "level_1": 0.9667,
+      "level_2": 0.9667,
+      "level_3": 0.9533,
+      "level_4": 0.9533
+    },
+    "60%": {
+      "level_1": 0.9867,
+      "level_2": 0.9867,
+      "level_3": 0.9867,
+      "level_4": 0.9867
+    },
+    "80%": {
+      "level_1": 1.0,
+      "level_2": 1.0,
+      "level_3": 1.0,
+      "level_4": 1.0
+    },
+    "100%": {
+      "level_1": 1.0,
+      "level_2": 1.0,
+      "level_3": 1.0,
+      "level_4": 1.0
+    }
+  },
+  "progressive_test_metrics": {
+    "20%": {
+      "accuracy": 0.54,
+      "macro_f1": 0.5308,
+      "taxonomy_accuracy": {
+        "level_1": 0.7,
+        "level_2": 0.6267,
+        "level_3": 0.52,
+        "level_4": 0.52
+      }
+    },
+    "40%": {
+      "accuracy": 0.9467,
+      "macro_f1": 0.9471,
+      "taxonomy_accuracy": {
+        "level_1": 0.9667,
+        "level_2": 0.9667,
+        "level_3": 0.9533,
+        "level_4": 0.9533
+      }
+    },
+    "60%": {
+      "accuracy": 0.98,
+      "macro_f1": 0.98,
+      "taxonomy_accuracy": {
+        "level_1": 0.9867,
+        "level_2": 0.9867,
+        "level_3": 0.9867,
+        "level_4": 0.9867
+      }
+    },
+    "80%": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "taxonomy_accuracy": {
+        "level_1": 1.0,
+        "level_2": 1.0,
+        "level_3": 1.0,
+        "level_4": 1.0
+      }
+    },
+    "100%": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "taxonomy_accuracy": {
+        "level_1": 1.0,
+        "level_2": 1.0,
+        "level_3": 1.0,
+        "level_4": 1.0
+      }
+    }
+  },
+  "is_synthetic": true
+}

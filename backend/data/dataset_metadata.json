@@ -1,0 +1,74 @@
+{
+  "dataset_type": "SYNTHETIC_SENTINEL2_SIMULATION",
+  "notice": "This dataset consists of synthetic Sentinel-2-like temporal observations. Not for operational crop estimation.",
+  "random_seed": 42,
+  "num_crops": 5,
+  "crops": [
+    "Wheat",
+    "Rice",
+    "Maize",
+    "Mustard",
+    "Cotton"
+  ],
+  "crop_to_id": {
+    "Wheat": 0,
+    "Rice": 1,
+    "Maize": 2,
+    "Mustard": 3,
+    "Cotton": 4
+  },
+  "id_to_crop": {
+    "0": "Wheat",
+    "1": "Rice",
+    "2": "Maize",
+    "3": "Mustard",
+    "4": "Cotton"
+  },
+  "features": [
+    "B2_Blue",
+    "B3_Green",
+    "B4_Red",
+    "B8_NIR",
+    "B11_SWIR1",
+    "B12_SWIR2",
+    "NDVI",
+    "NDWI",
+    "EVI"
+  ],
+  "num_timesteps": 20,
+  "num_fields_per_crop": 200,
+  "total_fields": 1000,
+  "cloud_missing_prob": 0.08,
+  "taxonomy": {
+    "Wheat": {
+      "level_1": "Monocotyledoneae (Monocots)",
+      "level_2": "Poaceae (True Grasses)",
+      "level_3": "Triticeae",
+      "level_4": "Triticum aestivum (Wheat)"
+    },
+    "Rice": {
+      "level_1": "Monocotyledoneae (Monocots)",
+      "level_2": "Poaceae (True Grasses)",
+      "level_3": "Oryzeae",
+      "level_4": "Oryza sativa (Rice)"
+    },
+    "Maize": {
+      "level_1": "Monocotyledoneae (Monocots)",
+      "level_2": "Poaceae (True Grasses)",
+      "level_3": "Maydeae",
+      "level_4": "Zea mays (Maize)"
+    },
+    "Mustard": {
+      "level_1": "Dicotyledoneae (Dicots)",
+      "level_2": "Brassicaceae (Mustard Family)",
+      "level_3": "Brassica",
+      "level_4": "Brassica juncea (Indian Mustard)"
+    },
+    "Cotton": {
+      "level_1": "Dicotyledoneae (Dicots)",
+      "level_2": "Malvaceae (Mallow Family)",
+      "level_3": "Gossypium",
+      "level_4": "Gossypium hirsutum (Cotton)"
+    }
+  }
+}
